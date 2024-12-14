@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(187, 187, 237),rgb(145, 237, 145));
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    padding: 2rem;
+    min-width: auto ;
+    min-height: 100vh;
+    
+}
+
+.turn-for {
+    margin-right:1rem;
+}
+
+.turn-input {
+    width: 40%;
+    display: flex;
+
+}
+
+
+#x-turn-input , #o-turn-input {
+    outline: none;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    background: rgba(255,255,255,0.8);
+    cursor: none;
+}
+
+.game-conatiner-sec {
+    display: grid;
+    grid-template-columns: repeat(3,7rem);
+    grid-template-rows: repeat(3,7rem);
+    justify-content: center;
+    align-content: center;
+}
+
+.game-conatiner-sec button{
+    outline: none;
+    border: 2px solid white;
+    background: rgba(255,255,255,0.7);
+    font-size: 3rem;
+    color: rgb(70, 10, 250);
+    cursor: pointer;
+    font-family: "Roboto", serif;
+}
+
+.game-conatiner-sec button:hover {
+    background:rgba(255,255,255,1.0);
+}
+
+
+.reset-sec button {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.reset-sec button:hover {
+    padding-right: 1.2rem;
+    padding-left : 1.2rem;
+    background: rgb(83, 83, 252);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+
+}
+
+.output-sec input{
+    outline : none;
+    border: none;
+    width: auto ;
+    font-size: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    background: transparent;
+
+}
+
+.turn-bg {
+    background: #f875d3 !important;
+    transition: all 40ms ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-bg-class {
+    background: rgb(227, 232, 189) !important;
+}

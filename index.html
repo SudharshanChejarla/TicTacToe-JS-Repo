@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="game">
+        <!-- 1st Section -->
+        <div class="player-turn-sec sections">
+            <div class="turn-for">
+                <h2>Turn For</h2>
+            </div>
+            <div class="turn-input">
+                <input type="text"  id="x-turn-input" value="X" readonly>
+                <input type="text"  id="o-turn-input" value="O" readonly>
+            </div>
+        </div>
+
+        <!-- 2nd Section -->
+        <div class="game-conatiner-sec">
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+            <button class="player-btns"></button>
+        </div>
+
+        <!-- 3rd Section -->
+         <div class="reset-sec sections">
+            <button id="reset-btn">Reset Game</button>
+         </div>
+
+        <!-- 4th Section -->
+        <div class="output-sec sections hide">
+            <input type="text" id="winner-display">
+        </div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
